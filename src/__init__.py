@@ -19,4 +19,4 @@ app = FastAPI(
     lifespan = life_span
 )
 
-app.include_router(book_router, prefix = "/api/{version}/books", tags = ['books'])
+app.include_router(book_router, prefix = f"/api/{version}/books", tags = ['books'])
